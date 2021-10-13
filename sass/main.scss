@@ -1,3 +1,33 @@
 @import "./utils/variables";
 @import "./componets/header";
 @import "./componets/footer";
+@mixin transition($args...) {
+  $args-list: join($args, null, space);
+  transition: $args-list;
+}
+
+a {
+  background-color: gray;
+  text-decoration: none;
+  @include transition(color, 0.3s, ease);
+  &:hover {
+    color: black;
+  }
+}
+/* @mixin transform($transforms...) {
+  // combine the passed transforms into a space separated list
+  $transform-list: join($transforms, null, space);
+
+  // print out the transforms
+  -webkit-transform: $transform-list;
+  -moz-transform: $transform-list;
+  -ms-transform: $transform-list;
+  -o-transform: $transform-list;
+  transform: $transform-list;
+}
+
+// Include
+span::before {
+  @include transform(rotate(90deg), translate(0, 9px));
+}
+ */
