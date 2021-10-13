@@ -1,7 +1,15 @@
 .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 1px solid #cfc2c2;
+    background-color: #ffff;
 
     // .header__logo
     &__logo {
+        margin-right: 93px;
     }
 
     // .header__menu
@@ -10,6 +18,15 @@
 
     // .header__contacts
     &__contacts {
+        display: flex;
+        margin-left: auto;
+        li{
+            display: flex;
+            align-items: center;
+        }
+        li + li{
+            margin-left: 20px;
+        }
     }
 }
 .menu {
