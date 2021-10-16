@@ -1,8 +1,10 @@
 @import "./componets/_title";
 @import "./componets/style";
 @import "./utils/variables";
+@import "./componets/form";
 @import "./utils/null";
 @import "./componets/header";
+@import "./componets/banner";
 @import "./componets/footer";
 /* @mixin transition($args...) {
   $args-list: join($args, null, space);
