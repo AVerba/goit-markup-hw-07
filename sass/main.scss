@@ -5,6 +5,8 @@
 @import "./utils/null";
 @import "./componets/header";
 @import "./componets/banner";
+@import "./componets/respons";
+@import "./componets/tasks";
 @import "./componets/footer";
 /* @mixin transition($args...) {
   $args-list: join($args, null, space);

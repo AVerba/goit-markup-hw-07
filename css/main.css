@@ -550,6 +550,96 @@ address {
   border: inherit;
 }
 
+.respons__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: calc(-1 * var(--card-respons-set-gap));
+}
+
+.respons__list li + li {
+  margin-left: 30px;
+}
+
+.respons__item {
+  -ms-flex-preferred-size: calc(100% / 3 - var(--card-respons-set-gap));
+      flex-basis: calc(100% / 3 - var(--card-respons-set-gap));
+}
+
+.item__icon {
+  margin: 0 0 31px 0;
+  padding: 25px 0;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
+.item h3 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-align: left;
+}
+
+/* . {
+
+    // ._d-flex
+
+    &_d-flex {
+    }
+}
+.icon {
+}
+ */
+.page__team {
+  background-color: #f5f4fa;
+}
+
+.tasks {
+  padding-top: 2px;
+}
+
+.tasks__title {
+  margin-bottom: 50px;
+}
+
+.tasks__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tasks__list li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.tasks__item {
+  position: relative;
+}
+
+.tasks__item .label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 27px 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
 /* @mixin transition($args...) {
   $args-list: join($args, null, space);
   transition: $args-list;

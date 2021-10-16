@@ -118,7 +118,7 @@
   } */
   
   /*=========BANNER===========*/
-  .banner {
+/*   .banner {
     margin: 0 auto;
     background-color: var(--banner-bg-color);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
@@ -131,7 +131,7 @@
   .banner__title {
     padding: 0 23%;
     margin: 0 0 30px 0;
-  }
+  } */
   .button {
     width: 200px;
     height: 50px;
@@ -314,7 +314,7 @@
     fill: var(--action-color);
   } */
   /*=========RESPONS===========*/
-  .respons__list {
+ /*  .respons__list {
     display: flex;
     margin-left: calc(-1 * var(--card-respons-set-gap));
   }
@@ -324,15 +324,15 @@
   .respons__item {
     flex-basis: calc(100% / 3 - var(--card-respons-set-gap));
     margin-left: var(--card-respons-set-gap);
-  }
-  .item__icon {
+  } */
+ /*  .item__icon {
     margin: 0 0 31px 0;
     padding: 25px 0;
     background: #f5f4fa;
     border-radius: 4px;
-  }
+  } */
   
-  .respons__item h3 {
+  /* .respons__item h3 {
     text-align: left;
     margin-bottom: 10px;
   }
@@ -342,28 +342,28 @@
     letter-spacing: 0.03em;
     color: var(--common-text-color);
     text-align: left;
-  }
+  } */
   /*=========TASKS===========*/
-  .tasks {
+/*   .tasks {
     padding-top: 2px;
   }
   .tasks__title {
     margin-bottom: 50px;
-  }
-  .page__team {
+  } */
+/*   .page__team {
     background-color: var(--team-bg-color);
-  }
-  .tasks__list {
+  } */
+ /*  .tasks__list {
     display: flex;
-  }
+  } */
   
-  .tasks__list li:not(:first-child) {
+/*   .tasks__list li:not(:first-child) {
     margin-left: 30px;
-  }
-  .tasks__item {
+  } */
+/*   .tasks__item {
     position: relative;
-  }
-  .tasks__item .label {
+  } */
+/*   .tasks__item .label {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -380,7 +380,7 @@
     text-transform: uppercase;
     color: #ffffff;
     background: rgba(47, 48, 58, 0.8);
-  }
+  } */
   /*=========TEAM===========*/
   
   .team__title {
