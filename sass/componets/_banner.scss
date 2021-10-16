@@ -1,0 +1,35 @@
+.banner {
+    margin: 0 auto;
+    background-color:collection-color(banner-bg-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 201px 0;
+    text-align: center;
+
+    // .banner__title
+    &__title {
+        padding: 0 23%;
+        margin: 0 0 30px 0;
+    }
+
+    // .banner__order-btn
+
+    &__order-btn {
+        width: 200px;
+        height: 50px;
+        text-align: center;
+        background-color:collection-color(action-color);
+        color: #ffff;
+        font-weight: bold;
+        font-size: 16px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        letter-spacing: 0.06em;
+        line-height: calc(30 / 16);
+        outline: none;
+        cursor: pointer;
+        border: inherit;
+    }
+}

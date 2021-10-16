@@ -8,13 +8,13 @@
     background-color: #ffff;
 
     ._active {
-        color: var(--action-color);
+        color: collection-color(action-color);
         &.menu__link {
             &::after {
                 position: absolute;
                 content: "";
                 display: block;
-                background-color: var(--action-color);
+                background-color:collection-color(action-color);
                 height: 4px;
                 width: 100%;
                 border-radius: 2px;
@@ -31,7 +31,7 @@
         }
     }
     &__logo:focus{
-        outline-color: var(--action-color);
+        outline-color:collection-color(action-color);
     }
 
     // .header__contacts
@@ -53,7 +53,6 @@
 
 .menu {
     // .menu__list
-
     &__list {
         display: flex;
         li{
@@ -67,7 +66,6 @@
             margin-left: 50px;
           }
     }
-
     // .menu__link
     &__link {
         position: relative;
@@ -81,17 +79,17 @@
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__link:hover {
-        color: var(--action-color);
+        color:collection-color(action-color);
       }
     &__link:focus {
-    outline-color: var(--action-color);
-    color: var(--action-color);
+    outline-color: collection-color(action-color);
+    color: collection-color(action-color);
     }
     &__link::after._active  {
         position: absolute;
         content: "";
         display: block;
-        background-color: var(--action-color);
+        background-color: collection-color(action-color);
         height: 4px;
         width: 100%;
         border-radius: 2px;
@@ -99,9 +97,7 @@
       }
 }
 
-
 .contacts {
-
     // .contacts__link
     &__link   {
         display: flex;
@@ -122,17 +118,17 @@
 
     }
     &__link:hover {
-        color: var(--action-color);
-        outline-color: var(--action-color);
+        color: collection-color(action-color);
+        outline-color: collection-color(action-color);
     }
     &__link:focus {
-        color: var(--action-color);
-        outline-color: var(--action-color);
+        color: collection-color(action-color);
+        outline-color: collection-color(action-color);
     }
     &__link:hover .icon {
-        fill: var(--action-color);
+        fill: collection-color(action-color);
     }
     &__link:focus .icon {
-        fill: var(--action-color);
+        fill: collection-color(action-color);
     }
 }
