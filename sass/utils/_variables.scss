@@ -28,7 +28,7 @@ $collection-gaps: (
 
 /* Функции для использования  переменных */
 
-@function collection-color($key: "primary") {
+@function collection-color($key) {
   @return map-get($collection-colors, $key);
 }
 

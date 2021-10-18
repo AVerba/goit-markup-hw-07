@@ -1,14 +1,16 @@
-@import "./componets/_title";
-@import "./componets/style";
 @import "./utils/variables";
-@import "./componets/form";
+@import "./components/form";
 @import "./utils/null";
 @import "./utils/mixins";
-@import "./componets/header";
-@import "./componets/banner";
-@import "./componets/respons";
-@import "./componets/tasks";
-@import "./componets/footer";
+@import "./components/_title";
+@import "./components/style";
+@import "./components/header";
+@import "./components/banner";
+@import "./components/respons";
+@import "./components/tasks";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
 /* @mixin transition($args...) {
   $args-list: join($args, null, space);
   transition: $args-list;
