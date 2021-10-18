@@ -2,11 +2,17 @@
   width: $width;
   height: $height;
 }
-@mixin font-modify($fontSize, $fontWeight, $letterSpacing, $lineHeight) {
+@mixin font-modify($color, $fontSize, $fontWeight, $letterSpacing, $lineHeight) {
+  color: $color;
   font-size: $fontSize;
   font-weight: $fontWeight;
   letter-spacing: $letterSpacing;
   line-height: calc(#{$lineHeight} / #{$fontSize});
+}
+@mixin background-pos($repeat: no-repeat, $position: center, $size: cover) {
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
 }
 
 @mixin input-placeholder {

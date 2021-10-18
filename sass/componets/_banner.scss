@@ -2,9 +2,7 @@
   margin: 0 auto;
   background-color: collection-color(banner-bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  @include background-pos();
   padding: 201px 0;
   text-align: center;
 
@@ -19,8 +17,7 @@
     @include add-size(200px, 50px);
     background-color: collection-color(action-color);
     text-align: center;
-    @include font-modify(16px, 700, 0.06em, 30px);
-    color: #ffff;
+    @include font-modify(#ffff, 16px, 700, 0.06em, 30px);
     box-shadow: collection-shadows(order-btn);
     border-radius: 4px;
     outline: none;
