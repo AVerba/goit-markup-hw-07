@@ -167,15 +167,15 @@ h3 {
     flex-direction: column;
   } */
 
-.form__list .form__item:not(:last-child) {
+/* .form__list .form__item:not(:last-child) {
   margin-bottom: 28px;
-}
+} */
 .form__list .form__item.form-comment {
   margin-bottom: 17px;
 }
-.form__list .form__item:last-child {
+/* .form__list .form__item:last-child {
   margin-bottom: 29px;
-}
+} */
 /*  .modal__title {
     font-weight: bold;
     font-size: 20px;
