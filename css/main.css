@@ -41,7 +41,7 @@ h3 {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-._d-flex {
+._flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,6 +357,12 @@ address {
   display: block;
 }
 
+/* @mixin flex-center {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+} */
 /*=============== ЦЕНТРИРОВАНИЕ ===================*/
 /*============Псевдоклассы для ссылок ==========================*/
 .header {
@@ -427,10 +433,11 @@ address {
 }
 
 .menu__list li {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
   color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: calc(16 / 14);
   cursor: pointer;
 }
 
@@ -446,7 +453,7 @@ address {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: calc(1.14286 / 14px);
+  line-height: calc(16 / 14);
   cursor: pointer;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -480,7 +487,7 @@ address {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: calc(1.14286 / 14px);
+  line-height: calc(16 / 14);
   text-decoration: none;
   padding-top: 2px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -493,6 +500,7 @@ address {
 
 .contacts__link svg {
   margin-right: 10px;
+  fill: #757575;
 }
 
 .contacts__link:hover {
@@ -539,7 +547,7 @@ address {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  line-height: calc(30px / 16px);
+  line-height: calc(30 / 16);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -560,8 +568,22 @@ address {
 }
 
 .respons__item {
-  -ms-flex-preferred-size: calc(100% / 3 - collection-gaps(card-respons-set-gap));
-      flex-basis: calc(100% / 3 - collection-gaps(card-respons-set-gap));
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
+}
+
+.respons__item h3 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.respons__item p {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: calc(24 / 14);
+  text-align: left;
 }
 
 .item__icon {
@@ -571,29 +593,6 @@ address {
   border-radius: 4px;
 }
 
-.item h3 {
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.item p {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: #757575;
-  text-align: left;
-}
-
-/* . {
-
-    // ._d-flex
-
-    &_d-flex {
-    }
-}
-.icon {
-}
- */
 .page__team {
   background-color: #f5f4fa;
 }
