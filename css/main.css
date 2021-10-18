@@ -51,6 +51,14 @@
   margin-bottom: 30px;
 }
 
+.form__list .form__item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.form__list .form__item:last-child {
+  margin-bottom: 29px;
+}
+
 .form__field {
   position: relative;
 }
