@@ -17,7 +17,7 @@
     @include add-size(200px, 50px);
     background-color: collection-color(action-color);
     text-align: center;
-    @include font-modify(#ffff, 16px, 700, 0.06em, 30px);
+    @include font-modify(#ffff, 16, 700, 0.06em, 30);
     box-shadow: collection-shadows(order-btn);
     border-radius: 4px;
     outline: none;
