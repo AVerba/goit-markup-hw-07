@@ -118,11 +118,6 @@ h3 {
   padding: 94px 0;
 }
 
-/* $collection-shadows: (
-    'modal-shadow': 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2),
-    'card-shadow': 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16),
-    'btn-shadow': 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12),    
-); */
 /* Функции для использования  переменных */
 ._backdrop {
   position: fixed;
@@ -535,16 +530,16 @@ address {
 .banner__order-btn {
   width: 200px;
   height: 50px;
-  text-align: center;
   background-color: #2196f3;
-  color: #ffff;
-  font-weight: bold;
+  text-align: center;
   font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: calc(30px / 16px);
+  color: #ffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  letter-spacing: 0.06em;
-  line-height: calc(30 / 16);
   outline: none;
   cursor: pointer;
   border: inherit;
@@ -554,7 +549,7 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: calc(-1 * var(--card-respons-set-gap));
+  margin-left: calc(-1 * collection-gaps(card-respons-set-gap));
 }
 
 .respons__list li + li {
@@ -562,8 +557,8 @@ address {
 }
 
 .respons__item {
-  -ms-flex-preferred-size: calc(100% / 3 - var(--card-respons-set-gap));
-      flex-basis: calc(100% / 3 - var(--card-respons-set-gap));
+  -ms-flex-preferred-size: calc(100% / 3 - collection-gaps(card-respons-set-gap));
+      flex-basis: calc(100% / 3 - collection-gaps(card-respons-set-gap));
 }
 
 .item__icon {
