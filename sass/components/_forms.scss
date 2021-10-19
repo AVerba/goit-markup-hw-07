@@ -25,7 +25,7 @@
     width: 528px;
     height: 581px;
     background: #ffffff;
-    box-shadow: var(--modal-shadow);
+    box-shadow: collection-shadows(modal-shadow);
     border-radius: 4px;
     padding: 40px 40px;
   }
@@ -49,6 +49,15 @@
 
   // .modal__checkbox
   &__checkbox {
+    &:checked ~ .form__label--checkbox::before {
+      border: 2px solid collection-color(action-color);
+      border-radius: 2px;
+      background-color: collection-color(action-color);
+      background-image: url(../images/control/vector-check.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }
 .form {
@@ -69,6 +78,9 @@
   // .form__field
   &__field {
     position: relative;
+    &:focus-within > .form__icon {
+      fill: collection-color(action-color);
+    }
   }
 
   // .form__input
@@ -82,6 +94,12 @@
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
+    &:focus,
+.comment:focus {
+  outline-color: collection-color(action-color);
+  color: #757575;
+}
+
   }
 
   // .form__label
@@ -158,6 +176,9 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
+  & ~ .form__label {
+    top: -124px;
+  }
 }
 .checkbox-link {
   display: inline;
@@ -203,11 +224,6 @@
   }
 }
 
-.footer {
-  // .footer__subscriptoin-email
-  &__subscriptoin-email {
-  }
-}
 .subscr-email {
   margin: 71px 0 0 92px;
 
