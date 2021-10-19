@@ -1,56 +1,19 @@
-@import "./utils/variables";
-@import "./components/form";
-@import "./utils/null";
-@import "./utils/mixins";
-@import "./components/_title";
-@import "./components/style";
-@import "./components/header";
-@import "./components/banner";
-@import "./components/respons";
-@import "./components/tasks";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/portfolio";
-/* @mixin transition($args...) {
-  $args-list: join($args, null, space);
-  transition: $args-list;
-}
- */
-
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  background-color: var(--main-bg-color);
-  color: var(--common-text-color);
-}
-/* a {
-  background-color: gray;
-  text-decoration: none;
-  @include transition(color, 0.3s, ease);
-  &:hover {
-    color: black;
-  }
-} */
-/* @mixin transform($transforms...) {
-  // combine the passed transforms into a space separated list
-  $transform-list: join($transforms, null, space);
-
-  // print out the transforms
-  -webkit-transform: $transform-list;
-  -moz-transform: $transform-list;
-  -ms-transform: $transform-list;
-  -o-transform: $transform-list;
-  transform: $transform-list;
-}
-
-// Include
-span::before {
-  @include transform(rotate(90deg), translate(0, 9px));
-}
- */
+@import "./base/null";
+@import "./base/style";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./components/buttons";
+@import "./components/container";
+@import "./components/forms";
+@import "./components/logo";
+@import "./components/title";
+@import "./components/social-elements";
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/respons";
+@import "./layout/tasks";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
