@@ -45,7 +45,6 @@
   }
 
   // .f-contacts__link
-
   &__link {
     font-size: 14px;
     line-height: 1.71;
@@ -55,22 +54,5 @@
     &:hover {
       color: collection-color(action-color);
     }
-  }
-}
-
-.f-form {
-  // .f-form__title
-
-  &__title {
-  }
-
-  // .f-form__btn
-
-  &__btn {
-  }
-
-  // .f-form__icon
-
-  &__icon {
   }
 }
