@@ -138,6 +138,9 @@
     &:disabled {
       background-color: #757575;
     }
+    &:active {
+      background-color: collection-color(btn-active-color);
+    }
   }
 }
 
