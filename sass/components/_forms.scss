@@ -4,8 +4,7 @@
   top: 0;
   left: 0;
   z-index: 1;
-  width: 100%;
-  height: 100%;
+  @include add-size(100%, 100%);
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 0.2s;
 }
@@ -18,12 +17,8 @@
 
   // .modal__order
   &__order {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
+    @include сentering-xy(fixed);
+    @include add-size(528px, 581px);
     background: #ffffff;
     box-shadow: collection-shadows(modal-shadow);
     border-radius: 4px;
@@ -38,12 +33,8 @@
 
   // .modal__title
   &__title {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: calc(23 / 20);
+    @include font-modify(#212121, 20, 700, 0.03em, 23);
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
     margin-bottom: 30px;
   }
 
@@ -60,6 +51,7 @@
     }
   }
 }
+
 .form {
   // .form__list
   &__list {
@@ -85,8 +77,7 @@
 
   // .form__input
   &__input {
-    width: 100%;
-    height: 40px;
+    @include add-size(100%, 40px);
     padding-left: 42px;
     color: #757575;
 
@@ -94,12 +85,10 @@
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
-    &:focus,
-.comment:focus {
-  outline-color: collection-color(action-color);
-  color: #757575;
-}
-
+    &:focus {
+      outline-color: collection-color(action-color);
+      color: #757575;
+    }
   }
 
   // .form__label
@@ -108,10 +97,7 @@
     top: -29px;
     left: 0;
 
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-    color: #757575;
+    @include font-modify(#757575, 12, 400, 0.01em, 14);
   }
 
   // .form__icon
@@ -130,17 +116,13 @@
 
   // .form__label--checkbox
   &__label--checkbox {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: #757575;
+    @include font-modify(#757575, 14, 400, 0.03em, 24);
     cursor: pointer;
     &::before {
       content: " ";
       display: inline-block;
       vertical-align: -11%;
-      width: 16px;
-      height: 15px;
+      @include add-size(16px, 15px);
       border: 2px solid #212121;
       border-radius: 2px;
       margin-right: 8px;
@@ -158,58 +140,36 @@
     }
   }
 }
-.field-icon {
-}
-.form-comment {
-}
+
 .comment {
-  width: 100%;
-  height: 120px;
+  @include add-size(100%, 120px);
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
   &::placeholder {
-    font-size: 12px;
-    line-height: cacl(14 / 12);
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    @include font-modify(rgba(117, 117, 117, 0.5), 12, 400, 0.01em, 14);
   }
   & ~ .form__label {
     top: -124px;
   }
+  &:focus {
+    outline-color: collection-color(action-color);
+    color: #757575;
+  }
 }
 .checkbox-link {
   display: inline;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
+  @include font-modify(#{collection-color(action-color)}, 14, 400, 0.03em, 24);
   text-decoration-line: underline;
-  color: collection-color(action-color);
 }
-.button {
-  width: 200px;
-  height: 50px;
-  text-align: center;
-  background: collection-color(action-color);
-  color: #ffff;
-  font-weight: bold;
-  font-size: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  letter-spacing: 0.06em;
-  line-height: calc(30 / 16);
-  outline: none;
-  cursor: pointer;
-  border: inherit;
-}
+
 .btn-close {
   position: absolute;
   top: 7px;
   right: 6px;
-  width: 30px;
-  height: 30px;
+  @include add-size(30px, 30px);
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 15px;
@@ -249,10 +209,8 @@
     border-radius: 4px;
     padding: 14.8px 0;
 
-    font-size: 16px;
-    line-height: calc (20 / 16);
-    letter-spacing: 0.03em;
-    color: currentColor;
+    @include font-modify(currentColor, 16, 400, 0.03em, 20);
+
     width: 358px;
     margin-right: 12px;
     &::placeholder {
@@ -269,17 +227,13 @@
 
   // .subscr-email__btn
   &__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    letter-spacing: 0.06em;
+    @extend ._flex-center;
+    @include font-modify(#ffff, 16, 700, 0.06em, 30);
   }
 
   // .subscr-email__icon
   &__icon {
+    margin-left: 10px;
     color: #ffff;
   }
 }
