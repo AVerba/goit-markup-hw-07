@@ -232,6 +232,9 @@
   &__btn {
     @extend ._flex-center;
     @include font-modify(#ffff, 16, 700, 0.06em, 30);
+    &:active {
+      background-color: collection-color(btn-active-color);
+    }
   }
 
   // .subscr-email__icon
