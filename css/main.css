@@ -424,6 +424,10 @@ body {
   line-height: calc(30 / 16);
 }
 
+.subscr-email__btn:active {
+  background-color: #188CE8;
+}
+
 .subscr-email__icon {
   margin-left: 10px;
   color: #ffff;
