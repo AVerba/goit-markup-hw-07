@@ -15,5 +15,8 @@
   // .banner__order-btn
   &__order-btn {
     @extend .button;
+    &:active {
+      background-color: collection-color(btn-active-color);
+    }
   }
 }
