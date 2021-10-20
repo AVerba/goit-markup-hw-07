@@ -38,11 +38,11 @@
   position: $pos;
 }
 /*=============== Центрирование ===================*/
-@mixin сentering-xy() {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+@mixin сentering-xy($position: absolute, $left: 50%, $top: 50%) {
+  position: $position;
+  left: $left;
+  top: $top;
+  transform: translate(-$left, -$top);
 }
 @mixin сentering-x() {
   position: absolute;
@@ -53,19 +53,4 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-}
-/*============Псевдоклассы для ссылок ==========================*/
-@mixin link($link, $visit, $hover, $active) {
-  a {
-    color: $link;
-    &:visited {
-      color: $visit;
-    }
-    &:hover {
-      color: $hover;
-    }
-    &:active {
-      color: $active;
-    }
-  }
 }

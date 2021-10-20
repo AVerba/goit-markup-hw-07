@@ -1,18 +1,14 @@
 .page {
   // .page__clients
-
   &__clients {
   }
 }
+
 .clients {
   // .clients__title
   &__title {
-    color: #000;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    @include font-modify(#000, 36, 700, 0.03em, 42);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 50px;
   }
 
@@ -39,6 +35,7 @@
       fill: collection-color(action-color);
     }
   }
+
   // .clients__link
   &__link {
   }
